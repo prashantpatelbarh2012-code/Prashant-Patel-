@@ -1,0 +1,5 @@
+{
+  "name": "CallSentry AI",
+  "description": "CallSentry AI is a smart call screening assistant that uses Gemini 2.5 Flash to answer unknown calls, verify caller identity in English and Hindi, and block spam calls automatically.",
+  "requestFramePermissions": ["microphone"]
+}
