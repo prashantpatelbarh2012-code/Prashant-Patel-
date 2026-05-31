@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Prashant Patel - Home</title>
+<!-- Fonts & Icons -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Theme Configuration -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-surface-variant": "#424753",
+                    "primary-fixed": "#d8e2ff",
+                    "tertiary-fixed": "#9fefff",
+                    "surface-container-highest": "#dfe3e8",
+                    "on-secondary-container": "#fffbff",
+                    "background": "#f7f9ff",
+                    "on-secondary-fixed": "#2c0050",
+                    "on-primary-container": "#fefcff",
+                    "on-tertiary-fixed-variant": "#004e59",
+                    "on-background": "#181c20",
+                    "on-tertiary-fixed": "#001f24",
+                    "surface": "#f7f9ff",
+                    "inverse-primary": "#adc6ff",
+                    "tertiary-container": "#008091",
+                    "primary-container": "#2771df",
+                    "surface-container": "#ebeef4",
+                    "on-primary": "#ffffff",
+                    "surface-container-low": "#f1f4fa",
+                    "secondary-fixed": "#f0dbff",
+                    "surface-variant": "#dfe3e8",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary-fixed": "#001a41",
+                    "on-error": "#ffffff",
+                    "secondary-fixed-dim": "#deb7ff",
+                    "primary": "#0058bd",
+                    "secondary": "#841dd7",
+                    "outline": "#727785",
+                    "surface-dim": "#d7dae0",
+                    "on-tertiary": "#ffffff",
+                    "on-tertiary-container": "#f8feff",
+                    "on-primary-fixed-variant": "#004494",
+                    "error-container": "#ffdad6",
+                    "secondary-container": "#9e42f2",
+                    "tertiary-fixed-dim": "#50d7ee",
+                    "inverse-surface": "#2d3135",
+                    "inverse-on-surface": "#eef1f7",
+                    "tertiary": "#006673",
+                    "on-secondary-fixed-variant": "#6900b2",
+                    "surface-tint": "#005ac1",
+                    "on-secondary": "#ffffff",
+                    "outline-variant": "#c2c6d5",
+                    "surface-bright": "#f7f9ff",
+                    "on-surface": "#181c20",
+                    "surface-container-high": "#e5e8ee",
+                    "on-error-container": "#93000a",
+                    "error": "#ba1a1a",
+                    "primary-fixed-dim": "#adc6ff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "xs": "4px",
+                    "sm": "12px",
+                    "margin-mobile": "16px",
+                    "base": "8px",
+                    "lg": "48px",
+                    "xl": "80px",
+                    "md": "24px",
+                    "gutter": "24px",
+                    "container-max": "1280px"
+            },
+            "fontFamily": {
+                    "headline-md": ["Plus Jakarta Sans"],
+                    "label-sm": ["Inter"],
+                    "body-md": ["Inter"],
+                    "display-lg-mobile": ["Plus Jakarta Sans"],
+                    "display-lg": ["Plus Jakarta Sans"],
+                    "headline-lg": ["Plus Jakarta Sans"],
+                    "label-md": ["Inter"],
+                    "body-lg": ["Inter"]
+            },
+            "fontSize": {
+                    "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "500"}],
+                    "label-sm": ["12px", {"lineHeight": "1.2", "fontWeight": "500"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "display-lg-mobile": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                    "display-lg": ["56px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                    "headline-lg": ["32px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                    "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.01em", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        /* Ambient light leak animations */
+        @keyframes pulse-glow {
+            0%, 100% { transform: scale(1) translate(0,0); opacity: 0.4; }
+            50% { transform: scale(1.1) translate(-2%, 2%); opacity: 0.6; }
+        }
+        .light-leak-1 { animation: pulse-glow 8s ease-in-out infinite alternate; }
+        .light-leak-2 { animation: pulse-glow 12s ease-in-out infinite alternate-reverse; }
+        
+        /* Gemini Shimmer */
+        @keyframes shimmer {
+            0% { background-position: -200% center; }
+            100% { background-position: 200% center; }
+        }
+        .ai-shimmer-bg {
+            background: linear-gradient(90deg, rgba(39,113,223,0) 0%, rgba(39,113,223,0.05) 50%, rgba(39,113,223,0) 100%);
+            background-size: 200% auto;
+            animation: shimmer 3s infinite linear;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md text-body-md antialiased min-h-screen relative overflow-x-hidden selection:bg-primary-container selection:text-on-primary-container">
+<!-- Ambient Background Light Leaks -->
+<div class="fixed inset-0 overflow-hidden pointer-events-none z-0">
+<div class="absolute top-[-10%] left-[-10%] w-[50vw] h-[50vw] rounded-full bg-primary/10 blur-[100px] light-leak-1 mix-blend-multiply"></div>
+<div class="absolute top-[20%] right-[-10%] w-[40vw] h-[40vw] rounded-full bg-secondary/10 blur-[100px] light-leak-2 mix-blend-multiply"></div>
+<div class="absolute bottom-[-10%] left-[20%] w-[60vw] h-[40vw] rounded-full bg-tertiary-fixed-dim/10 blur-[120px] light-leak-1 mix-blend-multiply" style="animation-delay: -4s;"></div>
+</div>
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full bg-surface/80 backdrop-blur-xl flex justify-between items-center px-margin-mobile py-sm z-50">
+<div class="flex items-center gap-sm">
+<div class="w-8 h-8 rounded-full overflow-hidden shadow-sm">
+<img alt="P.PATEL Avatar" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7rAHsKEF2H69G98Bq8Esh-FbYHju6AWPOiopwFL5IB27ePQzJWLem26xqbpfFNezvlWkDarB5nSUpgdIHgH6kqWf_qAPydsZ7ync9h3nDAssSjgCdvWMaZJBOfB4GbJGzO1CK7lYFmyS1i2xxHtxu2ZE8ep191hT-GWEQPKmxKGGh6Kj6B5JenQfmBaM5B8gNVulHuuVmmB1-_NnsRGrD0h0Vkcejah4RQX7NRlhK40YEk2yRB-tvOOz4TghyJlH7qx974xpKyw"/>
+</div>
+<span class="font-headline-md text-headline-md tracking-tighter text-primary">P.PATEL</span>
+</div>
+<button class="w-10 h-10 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-primary transition-colors scale-95 active:scale-90">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+</button>
+</header>
+<!-- Main Content Canvas -->
+<main class="relative z-10 pt-[100px] pb-[120px] px-margin-mobile md:px-gutter max-w-container-max mx-auto flex flex-col items-center">
+<!-- Hero Section -->
+<section class="flex flex-col items-center text-center w-full max-w-2xl mt-lg mb-xl">
+<div class="relative w-32 h-32 md:w-40 md:h-40 mb-md rounded-[2rem] overflow-hidden shadow-sm border border-white/40 group">
+<div class="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent mix-blend-overlay z-10 group-hover:opacity-0 transition-opacity duration-500"></div>
+<img alt="Portrait" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7rAHsKEF2H69G98Bq8Esh-FbYHju6AWPOiopwFL5IB27ePQzJWLem26xqbpfFNezvlWkDarB5nSUpgdIHgH6kqWf_qAPydsZ7ync9h3nDAssSjgCdvWMaZJBOfB4GbJGzO1CK7lYFmyS1i2xxHtxu2ZE8ep191hT-GWEQPKmxKGGh6Kj6B5JenQfmBaM5B8gNVulHuuVmmB1-_NnsRGrD0h0Vkcejah4RQX7NRlhK40YEk2yRB-tvOOz4TghyJlH7qx974xpKyw"/>
+</div>
+<h1 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-on-surface mb-xs tracking-tight">
+                Hello, I'm Prashant.
+            </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-md mx-auto">
+                Tech enthusiast, digital creator, and aspiring entrepreneur.
+            </p>
+</section>
+<!-- AI Assistant Input Area -->
+<section class="w-full max-w-xl mb-xl relative group">
+<!-- Glow effect behind input -->
+<div class="absolute -inset-1 bg-gradient-to-r from-primary via-secondary to-tertiary rounded-full blur opacity-20 group-hover:opacity-40 transition duration-1000 group-hover:duration-200"></div>
+<div class="relative bg-surface-container-lowest/80 backdrop-blur-md rounded-full border border-surface-variant flex items-center p-xs pl-md pr-xs shadow-sm hover:shadow-md transition-all">
+<span class="material-symbols-outlined text-primary mr-sm" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+<input class="flex-1 bg-transparent border-none focus:ring-0 text-on-surface placeholder:text-on-surface-variant/50 font-body-md text-body-md outline-none h-12" placeholder="Ask Prashant anything..." type="text"/>
+<button class="bg-primary hover:bg-primary/90 text-on-primary h-10 px-md rounded-full flex items-center justify-center transition-colors shadow-sm ml-sm">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">arrow_forward</span>
+</button>
+</div>
+<div class="flex justify-center mt-sm gap-sm">
+<span class="font-label-sm text-label-sm text-outline px-sm py-xs bg-surface-container-low rounded-full">AI Powered Search</span>
+</div>
+</section>
+<!-- Quick Actions (Bento Layout) -->
+<section class="w-full max-w-4xl grid grid-cols-1 md:grid-cols-3 gap-md mb-xl">
+<!-- Action 1 -->
+<button class="group relative overflow-hidden bg-surface-container-low/50 backdrop-blur-sm border border-surface-variant rounded-xl p-md flex flex-col items-start hover:bg-surface-container transition-all hover:shadow-sm text-left">
+<div class="w-10 h-10 rounded-full bg-primary-container text-primary flex items-center justify-center mb-md group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">timeline</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-xs">View Timeline</h3>
+<p class="font-body-md text-body-md text-on-surface-variant opacity-80">Trace my professional journey and milestones.</p>
+<div class="absolute bottom-0 right-0 w-32 h-32 bg-primary/5 rounded-tl-full blur-2xl"></div>
+</button>
+<!-- Action 2 -->
+<button class="group relative overflow-hidden bg-surface-container-low/50 backdrop-blur-sm border border-surface-variant rounded-xl p-md flex flex-col items-start hover:bg-surface-container transition-all hover:shadow-sm text-left">
+<div class="w-10 h-10 rounded-full bg-tertiary-container text-on-tertiary-container flex items-center justify-center mb-md group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">code_blocks</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-xs">Explore Projects</h3>
+<p class="font-body-md text-body-md text-on-surface-variant opacity-80">Discover apps, designs, and experiments.</p>
+<div class="absolute top-0 right-0 w-24 h-24 bg-tertiary/5 rounded-bl-full blur-xl"></div>
+</button>
+<!-- Action 3 -->
+<button class="group relative overflow-hidden bg-surface-container-low/50 backdrop-blur-sm border border-surface-variant rounded-xl p-md flex flex-col items-start hover:bg-surface-container transition-all hover:shadow-sm text-left md:col-span-1 col-span-1">
+<div class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center mb-md group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">menu_book</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-xs">Read 'Worker'</h3>
+<p class="font-body-md text-body-md text-on-surface-variant opacity-80">Latest thoughts and essays on digital craft.</p>
+<div class="absolute bottom-0 left-0 w-24 h-24 bg-secondary/5 rounded-tr-full blur-xl"></div>
+</button>
+</section>
+<!-- Glassmorphic Bio Container -->
+<section class="w-full max-w-4xl relative">
+<div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-secondary/5 rounded-2xl blur-md"></div>
+<div class="relative bg-surface/40 backdrop-blur-2xl border border-white/20 rounded-2xl p-lg shadow-[0_8px_32px_rgba(0,0,0,0.04)] overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-1 ai-shimmer-bg"></div>
+<div class="flex flex-col md:flex-row gap-lg items-center md:items-start">
+<div class="flex-1">
+<div class="flex items-center gap-xs mb-sm">
+<span class="material-symbols-outlined text-primary text-[18px]">psychology</span>
+<span class="font-label-md text-label-md text-primary tracking-wider uppercase">System Profile</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-md">Adaptive &amp; Driven</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed mb-md">
+                            I build digital experiences that live at the intersection of human intuition and technical capability. My focus is on creating clean, intentional tools that empower rather than overwhelm. Currently exploring the potentials of AI integration in everyday workflows.
+                        </p>
+<button class="inline-flex items-center gap-xs font-label-md text-label-md text-primary hover:text-primary-fixed-dim transition-colors group">
+                            Read Full Bio
+                            <span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar (Visible on Mobile) -->
+<nav class="md:hidden fixed bottom-md left-1/2 -translate-x-1/2 w-[calc(100%-32px)] rounded-full bg-surface-container/80 backdrop-blur-2xl shadow-lg border border-white/10 flex justify-around items-center px-sm py-xs z-50">
+<!-- Active Tab: Profile/About -->
+<button aria-label="Profile" class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-full p-3 scale-110 duration-300 ease-out">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">person_book</span>
+</button>
+<!-- Inactive Tabs -->
+<button aria-label="Projects" class="flex flex-col items-center justify-center text-on-surface-variant p-3 hover:bg-surface-container-highest rounded-full transition-colors">
+<span class="material-symbols-outlined">code_blocks</span>
+</button>
+<button aria-label="Thoughts" class="flex flex-col items-center justify-center text-on-surface-variant p-3 hover:bg-surface-container-highest rounded-full transition-colors">
+<span class="material-symbols-outlined">psychology</span>
+</button>
+<button aria-label="Contact" class="flex flex-col items-center justify-center text-on-surface-variant p-3 hover:bg-surface-container-highest rounded-full transition-colors">
+<span class="material-symbols-outlined">alternate_email</span>
+</button>
+</nav>
+<!-- Top Navigation Container for Desktop (Web view logic applied) -->
+<nav class="hidden md:flex fixed top-0 right-margin-mobile h-[72px] items-center gap-md z-50">
+<!-- Replicating bottom nav logic for top right on desktop, simplified to links -->
+<div class="flex items-center gap-sm bg-surface-container/50 backdrop-blur-md rounded-full px-xs py-xs border border-white/20">
+<button aria-label="Profile" class="flex items-center justify-center bg-primary-container text-on-primary-container rounded-full p-2 px-4 transition-colors font-label-md text-label-md gap-2">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">person_book</span>
+<span>Profile</span>
+</button>
+<button aria-label="Projects" class="flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-highest rounded-full p-2 px-4 transition-colors font-label-md text-label-md gap-2">
+<span class="material-symbols-outlined text-[18px]">code_blocks</span>
+<span>Projects</span>
+</button>
+<button aria-label="Thoughts" class="flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-highest rounded-full p-2 px-4 transition-colors font-label-md text-label-md gap-2">
+<span class="material-symbols-outlined text-[18px]">psychology</span>
+<span>Ideas</span>
+</button>
+<button aria-label="Contact" class="flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-highest rounded-full p-2 px-4 transition-colors font-label-md text-label-md gap-2">
+<span class="material-symbols-outlined text-[18px]">alternate_email</span>
+<span>Contact</span>
+</button>
+</div>
+</nav>
+</body></html>
